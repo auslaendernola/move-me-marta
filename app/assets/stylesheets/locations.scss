@@ -1,0 +1,16 @@
+// Place all the styles related to the Locations controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#map-canvas {
+  height: 70vh;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media screen and (max-width: 991) {
+  #map-canvas {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
