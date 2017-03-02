@@ -20,11 +20,15 @@
   <div class="col-md-6">
     <h3>The closest Buses are:</h3><br>
     <% @buses.each do |bus| %>
-    <p>
-      <strong>Route: </strong><%= bus["ROUTE"] %> <%= bus["DIRECTION"]%><br>
-      <strong>Bus Number: </strong><%= bus["VEHICLE"] %><br>
-      <strong>Next Stop: </strong><%= bus["TIMEPOINT"]%><br>
-    </p>
+    <div class="row">
+      <div class="col-md-10">
+        <p class="buseta">
+          <strong>Route: </strong><%= bus["ROUTE"] %> <%= bus["DIRECTION"]%><br>
+          <strong>Bus Number: </strong><%= bus["VEHICLE"] %><br>
+          <strong>Next Stop: </strong><%= bus["TIMEPOINT"]%><br>
+        </p>
+      </div>
+    </div>
     <% end %>
 
     <% if @buses.empty? %>
